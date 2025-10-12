@@ -49,7 +49,7 @@ export default function About() {
                                     I am a Professional UI/UX Designer & Web Developer with a strong focus on delivering
                                     visually compelling and user-centric digital solutions. With expertise in React.js,
                                     Next.js, HTML, CSS, Bootstrap, and Tailwind CSS, I bridge the gap between design and
-                                    development
+                                    development.
                                 </p>
                                 <ul className={styles.aboutuslist}>
                                     {skills.map((item, index) => (
