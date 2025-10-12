@@ -1,0 +1,21 @@
+.copyright_text {
+  text-align: center;
+}
+
+.copyright_text p {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 25px 0;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.main_footer {
+  background: #141414;
+}
+
+.link {
+  text-decoration: none;
+  color: #b636ff;
+  font-weight: 500;
+}

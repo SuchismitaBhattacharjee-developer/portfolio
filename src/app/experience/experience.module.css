@@ -1,0 +1,52 @@
+.experience {
+  padding: 60px 0;
+  position: relative;
+}
+.totalexperience {
+  margin-top: 40px;
+}
+.subheading{
+  text-align: center;
+}
+.eachExp h2 {
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.eachExp h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 14px;
+  text-transform: capitalize;
+}
+.eachTimeborder {
+  display: flex;
+  align-items: center;
+  padding: 26px 0 30px;
+}
+.eachTimeborder svg {
+  font-size: 10px;
+  color: #68228b;
+}
+.timelineHorizontal {
+  display: inline-block;
+  background: #b2c1ce;
+  height: 1px;
+  width: 100%;
+}
+.timelineContent .subheading {
+  color: #fff;
+}
+.timelineContent .subheading a {
+  color: #ef97ff;
+  text-decoration: none;
+}
+.allTitle {
+  justify-content: center;
+}
+.heading {
+  text-align: center;
+}

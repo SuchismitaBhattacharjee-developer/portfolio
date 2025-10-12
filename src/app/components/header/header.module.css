@@ -1,0 +1,94 @@
+.topArea {
+  padding: 20px 0px 20px;
+  position: relative;
+  z-index: 9999;
+  transition: all 0.5s ease-in-out;
+}
+.logoname {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: normal;
+  background: linear-gradient(
+    90deg,
+    rgba(217, 44, 249, 1) 0%,
+    rgba(239, 151, 255, 1) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.nav {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: end;
+}
+.smoothMenu {
+  padding: 20px 10px;
+}
+.smoothMenu a {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: 0.9s linear;
+  -moz-transition: 0.9s linear;
+  -ms-transition: 0.9s linear;
+  -o-transition: 0.9s linear;
+  transition: 0.9s linear;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+.smoothMenu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.9s ease;
+}
+.smoothMenu a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 44, 249, 1) 0%,
+    rgba(239, 151, 255, 1) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.smoothMenu .active a {
+  font-weight: bold;
+    background: linear-gradient(
+    90deg,
+    rgba(217, 44, 249, 1) 0%,
+    rgba(239, 151, 255, 1) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.fixed {
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  position: fixed;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: #000;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}

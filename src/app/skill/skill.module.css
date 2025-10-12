@@ -1,0 +1,43 @@
+.skillPart {
+  padding: 60px 0;
+  position: relative;
+}
+.skillSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+.progressWrapper {
+  position: relative;
+}
+.progressWrapper h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.progressValue {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  font-size: 16px;
+}
+.progress {
+  background-color: #e5e7eb;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.progressBar {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 44, 249, 1) 0%,
+    rgba(239, 151, 255, 1) 50%
+  );
+  height: 100%;
+  border-radius: 4px;
+  width: 0%;
+  transition: width 1s ease-out;
+}

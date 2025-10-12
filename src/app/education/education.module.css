@@ -1,0 +1,95 @@
+.educationPart {
+  padding: 60px 0;
+  position: relative;
+}
+.educationTop {
+  margin-bottom: 30px;
+}
+.educationRight {
+  padding-left: 30px;
+  border-left: 3px solid #b636ff;
+  color: #fff;
+}
+.educationBotttom {
+  counter-reset: edu;
+}
+.educationCard {
+  counter-increment: edu;
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  background: #141414;
+  box-shadow: 0px 65px 64.5px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.educationCard:before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background: #68228b;
+  left: 10px;
+  top: 20px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.educationCard:hover:before {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  border-radius: 0;
+}
+.educationCard small {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  z-index: 2;
+  position: relative;
+  min-height: 42px;
+  display: block;
+}
+.educationCard h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 12px 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.educationCard:after {
+  content: counter(edu, decimal-leading-zero);
+  position: absolute;
+  right: 14px;
+  bottom: 0;
+  font-size: 70px;
+  line-height: 80px;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.educationCard:hover:after {
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.educationCard .subheading {
+  min-height: 150px;
+}
