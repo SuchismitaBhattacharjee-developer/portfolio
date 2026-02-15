@@ -4,6 +4,7 @@
   z-index: 9999;
   transition: all 0.5s ease-in-out;
 }
+
 .logoname {
   display: inline-block;
   font-size: 20px;
@@ -12,16 +13,15 @@
   text-align: center;
   text-decoration: none;
   line-height: normal;
-  background: linear-gradient(
-    90deg,
-    rgba(217, 44, 249, 1) 0%,
-    rgba(239, 151, 255, 1) 50%
-  );
+  background: linear-gradient(90deg,
+      rgba(217, 44, 249, 1) 0%,
+      rgba(239, 151, 255, 1) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
+
 .nav {
   margin: 0;
   display: flex;
@@ -29,58 +29,119 @@
   align-items: center;
   justify-content: end;
 }
+
 .smoothMenu {
   padding: 20px 10px;
 }
+
 .smoothMenu a {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  -webkit-transition: 0.9s linear;
-  -moz-transition: 0.9s linear;
-  -ms-transition: 0.9s linear;
-  -o-transition: 0.9s linear;
-  transition: 0.9s linear;
+  transition: 0.3s linear;
   font-family: "Alegreya Sans SC", sans-serif;
-}
-.smoothMenu a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.9s ease;
 }
-.smoothMenu a:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(217, 44, 249, 1) 0%,
-    rgba(239, 151, 255, 1) 50%
-  );
+
+.smoothMenu a:hover,
+.active a {
+  background: linear-gradient(90deg,
+      rgba(217, 44, 249, 1) 0%,
+      rgba(239, 151, 255, 1) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
+  color: transparent !important;
 }
-.smoothMenu .active a {
-  font-weight: bold;
-    background: linear-gradient(
-    90deg,
-    rgba(217, 44, 249, 1) 0%,
-    rgba(239, 151, 255, 1) 50%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
+
 .fixed {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: transparent;
   position: fixed;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   background: #000;
 }
+
+/* --- Mobile Menu Styles --- */
+
+.mobileToggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.mobileToggle span {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.closeBtn {
+  display: none;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .mobileToggle {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* শুরুতে স্ক্রিনের বাইরে থাকবে */
+    width: 280px;
+    height: 100vh;
+    background: #111;
+    z-index: 10000;
+    transition: 0.5s ease-in-out;
+    padding-top: 80px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .menuOpen {
+    right: 0 !important;
+    /* ক্লিক করলে ডান দিক থেকে আসবে */
+  }
+
+  .closeBtn {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+
+  .smoothMenu {
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;

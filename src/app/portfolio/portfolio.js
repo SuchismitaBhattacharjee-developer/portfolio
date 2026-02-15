@@ -17,11 +17,11 @@ const portfolioItems = [
     },
     {
         id: 2,
-        category: 'development design',
+        category: 'development',
         title: 'Globnet',
         img: '../images/globnet.webp',
-        task: 'UI/UX, Frontend',
-        link: 'https://www.globnetllc.com/',
+        task: 'Frontend',
+        link: 'https://globnetllc.com/',
     },
     {
         id: 3,
@@ -33,26 +33,26 @@ const portfolioItems = [
     },
     {
         id: 4,
-        category: 'development design',
+        category: 'development',
         title: 'Roha',
         img: '../images/roha.webp',
-        task: 'UI/UX, Frontend',
+        task: 'Frontend',
         link: 'https://roha-precision.org/',
     },
     {
         id: 5,
-        category: 'development design',
+        category: 'development',
         title: 'Gmit',
         img: '../images/gmit.webp',
-        task: 'UI/UX, Frontend',
+        task: 'Frontend',
         link: 'https://gmitkolkata.org/',
     },
     {
         id: 6,
-        category: 'development design',
+        category: 'development',
         title: 'Amardeep Global',
         img: '../images/amardeep.webp',
-        task: 'UI/UX, Frontend',
+        task: 'Frontend',
         link: 'https://www.amardeepglobal.ae/',
     },
     {
@@ -65,13 +65,30 @@ const portfolioItems = [
     },
     {
         id: 8,
-        category: 'development design',
-        title: 'floorexpert',
+        category: 'development',
+        title: 'Floorexpert',
         img: '../images/floorexpert.webp',
-        task: 'UI/UX, Frontend',
+        task: 'Frontend',
         link: 'https://www.floorxpert.ae/',
     },
+    {
+        id: 9,
+        category: 'development',
+        title: 'Eduspire Global',
+        img: '../images/eduspire-global.webp',
+        task: 'Frontend',
+        link: 'https://eduspireglobal.com/',
+    },
+    {
+        id: 10,
+        category: 'development',
+        title: 'Digital Data Consultancy',
+        img: '../images/digitaldata.webp',
+        task: 'Frontend',
+        link: 'https://www.digitaldataconsultancy.com/',
+    },
 ];
+
 
 export default function PortfolioSection() {
     const gridRef = useRef(null);
@@ -139,7 +156,7 @@ export default function PortfolioSection() {
                     {portfolioItems.map((item) => (
                         <div
                             key={item.id}
-                            className={`col-lg-4 col-md-6 grid-item ${item.category}`}
+                            className={`col-lg-4 col-md-6 col-12 grid-item ${item.category}`}
                         >
                             <a
                                 href={item.link}

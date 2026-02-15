@@ -6,10 +6,13 @@ import { TbDeviceDesktopCode } from "react-icons/tb";
 
 export default function About() {
     const skills = [
-        "Designing wireframes, prototypes, and high-fidelity UI",
-        "Conducting user research and usability testing",
-        "Developing clean, responsive, and accessible web interfaces",
-        "Collaborating with cross-functional teams to ensure seamless user experiences",
+        "Frontend Developer specializing in building scalable, high-performance web applications using React.js, Next.js, JavaScript (ES6+), HTML5, and CSS3.",
+
+        "Strong expertise in component-based architecture, React Hooks, state management, RESTful API integration, and performance optimization.",
+
+        "Experienced in translating Figma designs into production-ready, responsive, and pixel-perfect user interfaces.",
+
+        "Focused on writing clean, maintainable, and optimized code to deliver seamless user experiences across devices and browsers."
     ];
 
     return (
@@ -21,7 +24,7 @@ export default function About() {
                             <div className={styles.aboutLeft}>
                                 <div className={styles.exp}>
                                     <h2 className={`heading ${styles.heading}`}>
-                                        2+ <br />
+                                        3+ <br />
                                         <span>Years of Experience</span>
                                     </h2>
                                 </div>

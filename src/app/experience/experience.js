@@ -8,21 +8,34 @@ export default function Experience() {
             year: "2023 - 2024",
             company: "DGtalists Solutions PVT. LTD",
             link: "https://dgtalists.com/",
-            description: `During my time at DGtalists Solutions Pvt. Ltd., I worked as a Frontend Developer, focusing on creating modern, responsive, and user-friendly web interfaces.My role involved transforming design concepts into functional digital experiences using technologies like HTML, CSS, Bootstrap, jQuery, JavaScript, React.js, and Next.js.I also utilized Figma to design intuitive UI/UX layouts, ensuring seamless and visually appealing experiences across devices.In addition, I collaborated with the development team using GitHub for version control and project management, maintaining clean and efficient workflows.Through this experience, I enhanced my ability to bridge the gap between design and development — delivering pixel-perfect, performance-optimized, and engaging websites that align with client goals and brand identity.`,
+            points: [
+                "Implemented and enhanced user-facing features using HTML5, CSS3, Bootstrap, Tailwind CSS, JavaScript, and TypeScript.",
+                "Optimized frontend performance using strong JavaScript fundamentals like Object handling, Array methods, Hoisting, and DOM optimization.",
+                "Refactored and scaled shared codebases using React.js and Next.js ensuring cross-browser compatibility."
+            ],
         },
         {
             year: "2024 - 2025",
             company: "RedoQ Software PVT. LTD",
             link: "https://redoq.com/",
-            description: `At RedoQ Software Pvt. Ltd., I worked as a Frontend Developer, where I was responsible for developing responsive and dynamic web interfaces.I utilized HTML, CSS, Bootstrap, jQuery, and JavaScript to build interactive and visually appealing user experiences.In addition, I collaborated with team members using Bitbucket for version control and code management, ensuring smooth project workflow and efficient deployment.This experience strengthened my understanding of front-end development best practices, teamwork in agile environments, and the importance of clean, maintainable code in delivering high-quality web solutions.`,
+            points: [
+                "Translated Figma designs into pixel-perfect production-ready web and mobile UIs.",
+                "Developed reusable components using React.js, Next.js, jQuery, and Micro-Frontend patterns.",
+                "Integrated RESTful APIs and utilized Redux for predictable state management."
+            ],
         },
         {
             year: "2025 - Present",
             company: "Intelspire Technology",
             link: "https://intelspire.net/",
-            description: `At Intelspire Technology, I worked as a Frontend Developer, where I contributed to building dynamic, responsive, and high-performance web applications.My work involved developing user-friendly interfaces using HTML, CSS, Bootstrap, jQuery, JavaScript, React.js, and Next.js, ensuring seamless performance across devices and browsers.I collaborated closely with designers and backend developers, using Figma for UI/UX design implementation and Git for version control.Additionally, I managed project tasks and progress efficiently through Jira, maintaining smooth coordination within the development team.This experience enhanced my expertise in modern frontend frameworks, agile project management, and delivering visually appealing, functional, and optimized web solutions.`,
+            points: [
+                "Developed scalable frontend applications using React.js and Next.js with modern ES6 concepts.",
+                "Built responsive and high-performance interfaces using HTML5, CSS3, and Tailwind CSS.",
+                "Integrated RESTful APIs and managed global/local state using Redux."
+            ],
         },
     ];
+
 
     return (
         <section className={styles.experience} id="experience">
@@ -47,11 +60,13 @@ export default function Experience() {
                                         <span className={styles.timelineHorizontal}></span>
                                     </div>
                                     <div className={styles.timelineContent}>
-                                        <p className={styles.subheading}>
-                                            During my time at{" "}
-                                            <a href={item.link}>{item.company}</a>,{" "}
-                                            {item.description}
-                                        </p>
+                                        <ul className={styles.expList}>
+                                            {item.points.map((point, i) => (
+                                                <li key={i}>
+                                                    {point}
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
                             </Col>

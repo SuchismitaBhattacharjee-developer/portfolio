@@ -5,17 +5,18 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 const skillsData = [
-    { name: "HTML", value: 100 },
-    { name: "CSS", value: 100 },
-    { name: "Bootstrap", value: 100 },
-    { name: "Tailwind Css", value: 96 },
-    { name: "jQuery", value: 95 },
-    { name: "Javascript", value: 95 },
-    { name: "Next.js", value: 90 },
-    { name: "React.js", value: 90 },
-    { name: "Figma", value: 86 },
-    { name: "Web Design", value: 90 },
+  { name: "React.js", value: 95 },
+  { name: "Next.js", value: 92 },
+  { name: "JavaScript (ES6+)", value: 95 },
+  { name: "TypeScript", value: 85 },
+  { name: "Redux / Zustand", value: 90 },
+  { name: "RESTful API Integration", value: 95 },
+  { name: "Component-Based Architecture", value: 92 },
+  { name: "Micro-Frontend Architecture", value: 85 },
+  { name: "Web Performance Optimization", value: 88 },
+  { name: "HTML5 / CSS3 / Tailwind / Bootstrap", value: 98 },
 ];
+
 
 export default function Skill() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
