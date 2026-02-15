@@ -2,17 +2,21 @@
   padding: 60px 0;
   position: relative;
 }
+
 .educationTop {
   margin-bottom: 30px;
 }
+
 .educationRight {
   padding-left: 30px;
   border-left: 3px solid #b636ff;
   color: #fff;
 }
+
 .educationBotttom {
   counter-reset: edu;
 }
+
 .educationCard {
   counter-increment: edu;
   position: relative;
@@ -29,6 +33,7 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
 .educationCard:before {
   position: absolute;
   content: "";
@@ -43,6 +48,7 @@
   -o-transition: all 0.6s;
   transition: all 0.6s;
 }
+
 .educationCard:hover:before {
   height: 100%;
   width: 100%;
@@ -53,6 +59,7 @@
   transition: all 0.6s;
   border-radius: 0;
 }
+
 .educationCard small {
   font-size: 14px;
   text-transform: uppercase;
@@ -63,6 +70,7 @@
   min-height: 42px;
   display: block;
 }
+
 .educationCard h5 {
   font-size: 20px;
   font-weight: 600;
@@ -72,6 +80,7 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .educationCard:after {
   content: counter(edu, decimal-leading-zero);
   position: absolute;
@@ -84,12 +93,28 @@
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .educationCard:hover:after {
   color: #fff;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .educationCard .subheading {
   min-height: 150px;
+}
+
+@media (max-width: 991px) {
+  .educationPart {
+    padding: 30px 0;
+  }
+
+  .educationBotttom .row {
+    --bs-gutter-y: 20px;
+  }
+
+  .educationCard .subheading {
+    min-height: auto;
+  }
 }

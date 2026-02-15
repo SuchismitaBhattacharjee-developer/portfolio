@@ -73,3 +73,26 @@
   line-height: 1.6;
   color: #fff;
 }
+
+@media (max-width: 991px) {
+  .experience {
+    padding: 30px 0;
+  }
+
+  .allTitle {
+    justify-content: start !important;
+  }
+
+  .heading,
+  .subheading {
+    text-align: left;
+  }
+
+  .totalexperience {
+    margin-top: 20px;
+  }
+
+  .eachTimeborder {
+    padding: 10px 0 10px;
+  }
+}

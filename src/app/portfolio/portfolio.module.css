@@ -161,3 +161,18 @@
 .box:hover .iconOverlay {
   opacity: 1;
 }
+
+@media (max-width: 991px) {
+  .portfolioSection {
+    padding: 30px 0;
+  }
+
+  .titlewrapper {
+    justify-content: start !important;
+  }
+
+  .heading,
+  .subheading {
+    text-align: left;
+  }
+}

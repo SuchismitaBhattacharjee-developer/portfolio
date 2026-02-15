@@ -20,7 +20,7 @@ export default function About() {
             <section className={styles.aboutMe} id="about">
                 <Container>
                     <Row className="align-items-center">
-                        <Col md={6}>
+                        <Col lg={6}>
                             <div className={styles.aboutLeft}>
                                 <div className={styles.exp}>
                                     <h2 className={`heading ${styles.heading}`}>
@@ -39,7 +39,7 @@ export default function About() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={6}>
+                        <Col lg={6}>
                             <div className={styles.aboutRight}>
                                 <div className="title-wrapper">
                                     <span className="title">About Me</span>

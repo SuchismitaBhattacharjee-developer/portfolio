@@ -31,7 +31,7 @@ export default function Skill() {
             <section className={styles.skillPart} id="skills">
                 <Container>
                     <Row>
-                        <Col lg={6} md={6}>
+                        <Col lg={6} >
                             <div className={styles.skillLeft}>
                                 <div className="title-wrapper">
                                     <span className="title">My Skills</span>
@@ -53,7 +53,7 @@ export default function Skill() {
                                 </p>
                             </div>
                         </Col>
-                        <Col lg={6} md={6}>
+                        <Col lg={6}>
                             <div ref={ref} className={styles.skillSection}>
                                 {skillsData.map((skill, index) => (
                                     <div key={index} className={styles.progressWrapper}>

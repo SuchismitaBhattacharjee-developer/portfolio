@@ -41,3 +41,11 @@
   width: 0%;
   transition: width 1s ease-out;
 }
+@media (max-width: 991px) {
+  .skillPart {
+    padding: 30px 0;
+  }
+  .skillSection{
+    padding: 0;
+  }
+}

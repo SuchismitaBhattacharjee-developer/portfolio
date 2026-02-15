@@ -33,9 +33,8 @@ export default function Contact() {
         <section className={styles.contact} id="contact">
             <Container>
                 <div className={styles.contactBox}>
-                    <Row>
-                        {/* Form Part */}
-                        <Col lg={6} md={6} sm={12}>
+                    <Row className={styles.row}>
+                        <Col lg={6} >
                             <Form className={styles.fromPart}>
                                 <Row>
                                     {[
@@ -44,7 +43,7 @@ export default function Contact() {
                                         { id: 3, label: "Subject", name: "subject", type: "text" },
                                         { id: 4, label: "Message", name: "message", type: "textarea" }
                                     ].map((field) => (
-                                        <Col key={field.id} lg={field.id <= 2 ? 6 : 12} md={6} sm={12}>
+                                        <Col key={field.id} lg={field.id <= 2 ? 6 : 12} >
                                             <div className={styles.eachformPart}>
                                                 <label htmlFor={`${field.name}-field`} className={styles.eachForm}>
                                                     {field.label} <span>*</span>
