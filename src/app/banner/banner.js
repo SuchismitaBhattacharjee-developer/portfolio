@@ -26,7 +26,7 @@ export default function Banner() {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/resume/SuchismitaResume.pdf';
+        link.href = '/resume/suchismita-resume.pdf';
         link.download = 'Suchismita_Bhattacharjee_Resume.pdf';
         link.click();
     };
