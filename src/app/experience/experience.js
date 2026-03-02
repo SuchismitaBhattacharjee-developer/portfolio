@@ -25,7 +25,7 @@ export default function Experience() {
             ],
         },
         {
-            year: "2025 - Present",
+            year: "2025 - 2026",
             company: "Intelspire Technology",
             link: "https://intelspire.net/",
             points: [
