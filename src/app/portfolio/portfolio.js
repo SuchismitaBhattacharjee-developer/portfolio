@@ -57,22 +57,6 @@ const portfolioItems = [
     },
     {
         id: 7,
-        category: 'development design',
-        title: 'Aparna House Keeping',
-        img: '../images/aparna.webp',
-        task: 'UI/UX, Frontend',
-        link: 'https://aparnahousekeeping.com/',
-    },
-    {
-        id: 8,
-        category: 'development',
-        title: 'Floorexpert',
-        img: '../images/floorexpert.webp',
-        task: 'Frontend',
-        link: 'https://www.floorxpert.ae/',
-    },
-    {
-        id: 9,
         category: 'development',
         title: 'Eduspire Global',
         img: '../images/eduspire-global.webp',
@@ -80,7 +64,7 @@ const portfolioItems = [
         link: 'https://eduspireglobal.com/',
     },
     {
-        id: 10,
+        id: 8,
         category: 'development',
         title: 'Digital Data Consultancy',
         img: '../images/digitaldata.webp',

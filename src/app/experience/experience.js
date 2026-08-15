@@ -24,16 +24,6 @@ export default function Experience() {
                 "Integrated RESTful APIs and utilized Redux for predictable state management."
             ],
         },
-        {
-            year: "2025 - 2026",
-            company: "Intelspire Technology",
-            link: "https://intelspire.net/",
-            points: [
-                "Developed scalable frontend applications using React.js and Next.js with modern ES6 concepts.",
-                "Built responsive and high-performance interfaces using HTML5, CSS3, and Tailwind CSS.",
-                "Integrated RESTful APIs and managed global/local state using Redux."
-            ],
-        },
     ];
 
 
@@ -51,7 +41,7 @@ export default function Experience() {
                 <div className={styles.totalexperience}>
                     <Row>
                         {experienceData.map((item, index) => (
-                            <Col lg={4} md={4} key={index}>
+                            <Col lg={6} md={6} key={index}>
                                 <div className={styles.eachExp}>
                                     <h2>{item.year}</h2>
                                     <h3>{item.company}</h3>
