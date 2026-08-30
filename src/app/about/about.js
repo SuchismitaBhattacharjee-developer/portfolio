@@ -24,7 +24,7 @@ export default function About() {
                             <div className={styles.aboutLeft}>
                                 <div className={styles.exp}>
                                     <h2 className={`heading ${styles.heading}`}>
-                                        2.5 <br />
+                                        3.1 <br />
                                         <span>Years of Experience</span>
                                     </h2>
                                 </div>
