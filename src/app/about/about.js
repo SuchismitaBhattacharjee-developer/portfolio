@@ -24,7 +24,7 @@ export default function About() {
                             <div className={styles.aboutLeft}>
                                 <div className={styles.exp}>
                                     <h2 className={`heading ${styles.heading}`}>
-                                        3.1 <br />
+                                        3.10 <br />
                                         <span>Years of Experience</span>
                                     </h2>
                                 </div>
@@ -34,7 +34,7 @@ export default function About() {
                                     </div>
                                     <div className={styles.content}>
                                         <h5>Frontend Engineer</h5>
-                                        <span>30+ Projects</span>
+                                        <span>20+ Projects</span>
                                     </div>
                                 </div>
                             </div>
