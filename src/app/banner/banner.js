@@ -56,13 +56,13 @@ export default function Banner() {
                                             />
                                         </span>
                                     </p>
-                                    <Button className={`${styles.download} ${styles.animatedBtn}`} onClick={handleDownload}>
+                                    {/* <Button className={`${styles.download} ${styles.animatedBtn}`} onClick={handleDownload}>
                                         Download
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                    </Button>
+                                    </Button> */}
                                 </div>
                             </Col>
                             <Col lg={5}>
